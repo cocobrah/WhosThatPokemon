@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: linear-gradient(45deg, #FF2CAA 0%, #ffff01 100%);
+    height: 100vh;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+    font-family: "Pokemon Solid", sans;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(32, 32, 32);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    font-family: "Pokemon Solid", sans;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(32, 32, 32);
+    letter-spacing: 7px;
+    font-size: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.img-wrapper {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    filter: drop-shadow(6px 6px 6px rgb(32, 32, 32));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(42, 85, 177);
+    mix-blend-mode: multiply;
+    pointer-events: none; /* Ensures clicks pass through this overlay */
+}
+
+input {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
 }
